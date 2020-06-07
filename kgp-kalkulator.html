@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        /* <![CDATA[ */
+        accConf = {
+            "events": {
+                "endpointPaths": ["/a8f4d8cd95e164917035b64b867a45dd"]
+            }
+        }; /* ]]> */
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+
+        <header class="header">
+            <div class="menu-mobile">
+                <img src="images/menu.svg" alt="">
+            </div>
+            <div class="logo">
+                <a href="kgp.html">
+                    <canvas id="logo"></canvas>
+                </a>
+            </div>
+            <nav class="navbar-wrapper">
+                <ul class="navbar-list">
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-historia-powstania.html"> Historia
+                            Powstania </a></li>
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-wykaz-szczytow.html"> Wykaz Szczytów </a>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-mapa.html"> Mapa KGP </a> </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-glowne-szlaki.html"> Główne Szlaki </a>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-klub-zdobywcow.html"> Klub Zdobywców </a>
+                    </li>
+
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-rekordy.html">Kgp-rekordy</a></li>
+                  
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-kalkulator.html">Kalkulator</a></li>
+                    <li class="navbar-item"> <a class="navbar-link" href="kgp-kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="header-section szczyty-background">
+            Kalkulator
+
+
+        </section>
+        <div class="container border"></div>
+        <div class="wrapper">
+            <div class="row-text">
+                <p>
+                    W tej zakładce przedstawiam kalkulator do obliczania strumienia masy przy zastosowaniu zwężki.
+                    Niestety nie znalazłem pomysłu na kalkulator "tematyczny"
+                </p>
+            </div>
+
+
+
+            <div id="calculator">
+
+                <h3>Kalkulator strumienia masy przy zastosowaniu zwężki
+
+                </h3>
+                <div id="errors"></div>
+
+                <div>
+                    <p>Współczynnik przepływu</p>
+                    <input id="c" value="0.603192341" type="number" placeholder=" " required> <br>
+                </div>
+                <div>
+                    <p>
+                        ε - Liczba ekspansji (0-1)
+                    </p>
+                    <input id="e" value="0.998346421" type="number" placeholder="" min="0" max="1" step="0.01" required>
+                    <br>
+                </div>
+                <div>
+                    <p>średnica otworu zwężki [m]</p>
+                    <input id="d" value="0.025" type="number" placeholder=" " required> <br>
+                </div>
+                <div>
+                    <p>β - Przewężenie zwężki</p>
+                    <input id="b" value="0.5" type="number" placeholder="" required> <br>
+                </div>
+                <div>
+                    <p>∆p- ciśnienie różnicowe statyczne na zwężce[pa]</p>
+                    <input id="p" value="2075" type="number" placeholder="" required> <br>
+
+                </div>
+
+                <div>
+                    <p>ρ1- gęstość powietrza przed zwężką [kg/m3]</p>
+                    <input id="p1" value="4.502" type="number" placeholder="" required> <br>
+                </div>
+
+                <button id="calculate">Wylicz</button>
+                <br>
+                <span id="result"></span>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="line">
+                <div id="watch"></div>
+                <div id="date"></div>
+            </div>
+
+        </div>
+
+    </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>

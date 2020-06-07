@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        /* <![CDATA[ */
+        accConf = {
+            "events": {
+                "endpointPaths": ["/a8f4d8cd95e164917035b64b867a45dd"]
+            }
+        }; /* ]]> */
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGP-mapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="menu-mobile">
+            <img src="images/menu.svg" alt="">
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <canvas id="logo"></canvas>
+            </a></div>
+        <nav class="navbar-wrapper">
+            <ul class="navbar-list">
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-historia-powstania.html"> Historia Powstania
+                    </a></li>
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-wykaz-szczytow.html"> Wykaz Szczytów </a></li>
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-mapa.html"> Mapa KGP </a> </li>
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-glowne-szlaki.html"> Główne Szlaki </a></li>
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-klub-zdobywcow.html"> Klub Zdobywców </a>
+                </li>
+
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-rekordy.html">Kgp-rekordy</a></li>
+                
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-kalkulator.html">Kalkulator</a></li>
+                <li class="navbar-item"> <a class="navbar-link" href="kgp-kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="header-section">
+        KGP-mapa
+    </section>
+
+    <div class="container border">
+        <div class="row-text">
+            <p> W tym miejscu najeżdzając na mapie na Sudety, bądź Karpaty, czyli 2 główne łańcuchy górskie w Europie
+                Środkowo-Wschodniej, w skład których wchodzą mniejsze pasma leżące na terenie Państwa, wyświetlimy listę
+                szczytów należących do Sudetów lub Karpat. Na mapie nie umieściłem jednego wierzchołka i zagadkę,
+                którego pozostawiam czytelnikom.
+            </p>
+        </div>
+
+        <section class="page-section">
+            <h1 class="border">Mapa ukształtowania powierzchni południowej Polski</h1>
+            <div class=" wrap-map">
+
+                <div id="map-t">
+                    <img src="images/kgp.jpg" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area id="area-sudety" href="#sudety" alt="Sudety" title="Sudety"
+                            coords="49,54,56,58,65,61,76,66,81,71,86,78,91,87,95,94,105,103,109,111,114,118,125,116,132,109,136,105,137,98,133,89,124,78,118,73,111,61,101,54,89,49,80,45,63,44,53,45"
+                            shape="poly">
+                        <area id="area-karpaty" href="#karpaty" alt="" title="Karpaty"
+                            coords="227,140,240,135,265,133,288,135,308,140,319,143,341,145,366,149,399,152,409,148,423,144,429,152,427,159,429,170,430,176,431,183,438,192,435,199,425,197,403,188,389,176,378,173,367,170,356,170,346,175,341,180,328,175,316,173,308,176,296,183,295,189,286,190,279,190,271,189,275,176,268,171,264,164,257,158,251,163,246,172,237,174,228,175,229,165,221,152"
+                            shape="poly">
+                    </map>
+                </div>
+
+                <ul id="#sudety" class="list sudety">
+                    <li>Karkonosze-Śnieżka</li>
+                    <li>Masyw Śnieżnika-Śnieżnik</li>
+                    <li>Góry Izerskie-Wysoka Kopa</li>
+                    <li>Góry Bialskie- Rudawiec</li>
+                    <li>Góry Orlickie-Orlica</li>
+                    <li>Góry Sowie-Wielka Sowa</li>
+                    <li>Góry Złote-Kowadło</li>
+                    <li>Góry Bystrzyckie-Jagodna</li>
+                    <li>Rudawy Janowickie-Skalnie</li>
+                    <li>Góry Kamienne-Waligóra</li>
+                    <li>Góry Stołowe-Szczeliniec Wielki</li>
+                    <li>Góry Wałbrzyskie-Chełmiec</li>
+                    <li>Góry Bardzkie-Kłodzka Góra</li>
+                    <li>Góry Kaczawskie-Skopiec</li>
+                    <li>Masyw Ślęży-Ślęża</li>
+                    <li>Góry Opawskie-Biskupia Kopa</li>
+                </ul>
+                <ul id="#karpaty" class="list karpaty">
+                    <li>Beskid Śląski-Skrzyczne</li>
+                    <li>Beskid Mały-Czupel</li>
+                    <li>Bieszczady-Tarnica</li>
+                    <li>Tatry-Rysy</li>
+                    <li>Beskid Żywiecki-Babia Góra</li>
+                    <li>Gorce-Turbacz</li>
+                    <li>Beskid Sądecki-Radziejowa</li>
+                    <li>Beskid Wyspowy-Mogielica </li>
+                    <li>Pieniny-Wysoka</li>
+                    <li>Beskid Niski-Lackowa</li>
+                    <li>Beskid Makowski-Lubomir</li>
+                </ul>
+            </div>
+
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="line">
+                <div id="watch"></div>
+                <div id="date"></div>
+            </div>
+
+        </div>
+
+    </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
